@@ -9,6 +9,7 @@ function loadHTML(id, file) {
 loadHTML("header-placeholder", "header.html");
 loadHTML("map-placeholder", "map.html");
 loadHTML("contact-info-placeholder", "contact-info.html");
+loadHTML("footer-placeholder", "footer.html");
 
 
 window.onscroll = function() {myFunction()};
