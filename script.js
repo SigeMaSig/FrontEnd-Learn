@@ -11,16 +11,19 @@ loadHTML("map-placeholder", "map.html");
 loadHTML("contact-info-placeholder", "contact-info.html");
 loadHTML("footer-placeholder", "footer.html");
 
+document.addEventListener("DOMContentLoaded", () => {
+  const header = document.getElementById("myHeader");
+  const nav = header.querySelector("nav");
+  const navLinks = nav.querySelectorAll("a");
 
-window.onscroll = function() {myFunction()};
-
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
+  navLinks.forEach(link => {
+    link.addEventListener("click", event => {
+      event.preventDefault();
+      const target = event.target.getAttribute("href");
+      const section = document.querySelector(target);
+      section.scrollIntoView({
+        behavior: "smooth"
+      });
+    });
+  });
+});
