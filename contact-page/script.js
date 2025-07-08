@@ -6,10 +6,10 @@ function loadHTML(id, file) {
     });
 }
 
-loadHTML("header-placeholder", "header.html");
+loadHTML("header-placeholder", "../ASSETS/header.html");
 loadHTML("map-placeholder", "map.html");
 loadHTML("contact-info-placeholder", "contact-info.html");
-loadHTML("footer-placeholder", "footer.html");
+loadHTML("footer-placeholder", "../ASSETS/footer.html");
 
 document.addEventListener("DOMContentLoaded", () => {
   const header = document.getElementById("myHeader");
