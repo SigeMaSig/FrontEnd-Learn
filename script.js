@@ -5,11 +5,11 @@ function loadHTML(id, file) {
       document.getElementById(id).innerHTML = data;
     });
 }
-loadHTML("header-placeholder", "ASSETS/header.html");
-loadHTML("map-placeholder", "contact-page/map.html");
-loadHTML("footer-placeholder", "ASSETS/footer.html");
-loadHTML("contact-info", "contact-page/contact.html");
-loadHTML("contact-info-placeholder", "contact-page/contact-info.html");
+loadHTML("header-placeholder", "/ASSETS/header.html");
+loadHTML("map-placeholder", "/contact-page/map.html");
+loadHTML("footer-placeholder", "/ASSETS/footer.html");
+loadHTML("contact-info", "/contact-page/contact.html");
+loadHTML("contact-info-placeholder", "/contact-page/contact-info.html");
 
 
 document.addEventListener("DOMContentLoaded", () => {
